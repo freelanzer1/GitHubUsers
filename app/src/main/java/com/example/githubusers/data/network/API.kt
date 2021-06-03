@@ -1,5 +1,6 @@
 package com.example.githubusers.data.network
 
+import com.example.githubusers.data.modeels.Episode
 import com.example.githubusers.data.modeels.Location
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -19,5 +20,5 @@ interface API {
     @GET("episode/{id}")
     fun getEpisodeByIdArray(
         @Query("id") id: Array<Int>
-    ): Observable<Location>
+    ): Observable<Episode>
 }

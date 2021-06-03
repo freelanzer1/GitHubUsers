@@ -13,8 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:name=".ThisApp"
-        android:theme="@style/Theme.GitHubUsers">
+        android:theme="@style/Theme.GitHubUsers"
+        >
         <activity
+            android:theme="@style/Theme.GitHubUsers.Launcher"
             android:name=".ui.MainActivity"
             android:label="@string/app_name">
             <intent-filter>
